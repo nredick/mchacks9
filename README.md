@@ -10,19 +10,31 @@ The game was built using C# on the Unity game development platform, based on a t
 
 In our spoof, pac-man is being chased by COVID-19 variants: Alpha (Pink), Beta (Beta), Delta (Orange), and Omicron (Green). We created custom sprites for the game, including the COVID variant "ghosts", face-mask "power pellets", and vaccine syringe and pill "fruits."
 
+<!-- In the hopes of creating an educational gamespace, there are informative messages about COVID safety between game rounds.-->
+
 ## Demo Images
 
 COVID-19 "Ghost" Variants:
 
 ![alpha](demo_images/big_ghost_alpha.png)
+![alpha](demo_images/CovidBig3.png)
+![alpha](demo_images/CovidBig4.png)
+![alpha](demo_images/CovidBig2.png)
+
+
+Vulnerable ghosts: 
+
+![dead](demo_images/BlueGhostBig.png)
 
 
 Face-mask "power pellets": 
 
 
-Vaccine syringe and pill "fruits": 
+Vaccine syringe, hand sanitizer, and pill -themed "fruits": 
 
 ![syringe](demo_images/large_syringe.png)
+![sanitizer](demo_images/big_sanitiser.png)
+![pill](demo_images/PillExtraBig.png)
 
 ## Repository Organization
 
