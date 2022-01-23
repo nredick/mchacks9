@@ -60,17 +60,62 @@ And at least for some of us, that game development is not a career path we'll be
 
 **Face-mask "power pellets":** 
 
-![dead](demo_images/big_mask.png)
+![dead](demo_images/mask.png)
 
 **Vaccine syringe, hand sanitizer, and pill -themed "fruits":**
 
-![syringe](demo_images/large_syringe.png)
-![sanitizer](demo_images/big_sanitiser.png)
-![pill](demo_images/PillExtraBig.png)
+![syringe](demo_images/syringe.png)
+![sanitizer](demo_images/sanitizer.png)
+![pill](demo_images/pill.png)
 
 ## Demo
 
 ## Repository Organization
 
+```
+.
+├── README.md
+├── custom_sprites
+│   ├── Fruit_Pill.png
+│   ├── Fruit_Sanitizer.png
+│   ├── Fruit_Syringe.png
+│   ├── Ghost_Alpha.png
+│   ├── Ghost_Beta.png
+│   ├── Ghost_Delta.png
+│   ├── Ghost_Omicron.png
+│   ├── mask.png
+│   ├── pacman_0.png
+│   ├── pacman_1.png
+│   ├── pacman_10.png
+│   ├── pacman_11.png
+│   ├── pacman_2.png
+│   ├── pacman_3.png
+│   ├── pacman_4.png
+│   ├── pacman_5.png
+│   ├── pacman_6.png
+│   ├── pacman_7.png
+│   ├── pacman_8.png
+│   ├── pacman_9.png
+│   ├── pacmans.png
+│   └── pill.png
+├── demo_images
+│   ├── alpha.png
+│   ├── beta.png
+│   ├── delta.png
+│   ├── edible.png
+│   ├── mask.png
+│   ├── omicron.png
+│   ├── pill.png
+│   ├── sanitizer.png
+│   └── syringe.png
+└── panman
+    ├── Assets
+    ├── Library
+    ├── Logs
+    ├── Packages
+    ├── ProjectSettings
+    ├── Temp
+    └── UserSettings
 
-
+10 directories, 32 files
+```
