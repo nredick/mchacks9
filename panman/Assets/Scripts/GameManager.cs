@@ -125,6 +125,26 @@ public class GameManager : MonoBehaviour
         Invoke(nameof(ResetGhostMultiplier), pellet.duration); // reset multiplier after pellet runs out
     }
 
+    public void PillPelletEaten(PillPellet pellet)
+    {
+        /*for (int i = 0; i < this.ghosts.Length; i++) { // able to eat ghosts
+            this.ghosts[i].frightened.Enable(pellet.duration); // enable the frightened state for pellet duration
+        }
+
+        PelletEaten(pellet);
+        CancelInvoke(nameof(ResetGhostMultiplier)); // if you eat two ghosts in a row, cancel previous to restart the effects
+        Invoke(nameof(ResetGhostMultiplier), pellet.duration); // reset multiplier after pellet runs out
+        */
+    }
+
+    public void SyringePelletEaten(SyringePellet pellet)
+    {
+        // increment lives by 1
+        SetLives(this.lives + 1);
+
+        PelletEaten(pellet);
+    }
+
     private bool HasRemainingPellets()
     { // checks if any pellets are still active
         foreach (Transform pellet in this.pellets)
