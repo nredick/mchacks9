@@ -48,11 +48,11 @@ And at least for some of us, that game development is not a career path we'll be
 
 **COVID-19 "Ghost" Variants:**
 
-|   |   | ![alpha](demo_images/alpha.png) |    ![beta](demo_images/beta.png)    |
-|---|---|:-------------------------------:|:-----------------------------------:|
-|   |   |          Alpha Variant          |             Beta Variant            |
-|   |   | ![delta](demo_images/delta.png) | ![omicron](demo_images/omicron.png) |
-|   |   |          Delta Variant          |           Omicron Variant           |
+| ![alpha](demo_images/alpha.png) |    ![beta](demo_images/beta.png)    |
+|:-------------------------------:|:-----------------------------------:|
+|          Alpha Variant          |             Beta Variant            |
+| ![delta](demo_images/delta.png) | ![omicron](demo_images/omicron.png) |
+|          Delta Variant          |           Omicron Variant           |
 
 **Vulnerable ghosts:**
 
