@@ -1,6 +1,8 @@
 # Mc(Hack)fee Antivirus 2022 - Pan(demic)-Man
 
-This project was built for [McHacks 9 - 2022](https://www.mchacks.ca), a virtual, 36-hour hackathon. Our goal was to learn more about game development, so we created a COVID-themed spoof of the classic '80s arcade game: Pac-Man. 
+Winner of both "Achievement Unlocked: most fun and creative game dev hack" _and_ "Best Design: most ~aesthetic~ hack sporting nice UI/UX" superlatives @ McHacks 9](https://www.mchacks.ca)! 
+
+This project was built for [McHacks 9](https://www.mchacks.ca), a virtual, 36-hour hackathon. Our goal was to learn more about game development, so we created a COVID-themed spoof of the classic '80s arcade game: Pac-Man. 
 
 Try the game [HERE](https://pacdemic-man-2vsjz.ondigitalocean.app)!
 
