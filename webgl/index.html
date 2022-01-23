@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <h1 style="text-align: center;">Pacdemic-Man</h1>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -117,8 +118,8 @@
       };
       document.body.appendChild(script);
     </script>
-    <h2 id="-gameplay">🎮 Gameplay</h2>
-    <ul>
+    <h2 id="-gameplay" style="text-align: center;">🎮 Gameplay</h2>
+    <ul style="text-align: center;">
         <li>Like the original Pac-Man game, the goal is to accumulate as many points as possible</li>
         <li>Gameplay begins immediately!</li>
         <li>Move pacdemic-man with the  <code>W</code> <code>A</code> <code>S</code> <code>D</code> keys or <code>up</code> <code>down</code> <code>left</code> <code>right</code> arrow keys </li>
@@ -126,9 +127,11 @@
     </ul>
     <table>
         <thead>
-            <tr>
-                <th>Item</th>
-                <th>Bonus</th>
-            </tr>
+            <tr><th>Item Bonuses</th></tr>
+            <tr><th>Vaccine</th><th>+1 life</th></tr>
+            <tr><th>Pill</th><th>5s immunity & slower variants & +25 pts</th></tr>
+            <tr><th>Mask</th><th>edible variants & +50 pts</th></tr>
+            <tr><th>Hand Sanitizer</th><th>+15 pts</th></tr>
+            <tr><th>Pellets</th><th>+10 pts</th></tr> 
   </body>
 </html>

@@ -18,6 +18,11 @@ This project was inspired by our desire to dive into the world of game developme
 ## ⚙️ How we built it
 The game was built on the Unity game development platform using C# and is largely based on a tutorial by Zigorous ([YouTube](https://youtu.be/TKt_VlMn_aA), [Github](https://github.com/zigurous/unity-pacman-tutorial)). We would like to credit the original author and emphasize that we approached this hackathon purely as a learning experience. 
 
+- The pills, syringe, and hand sanitizer required individual function implementations in C# for the "ghost" reactions to the power-ups 
+- Fun(?), appropriately themed game over text was added 
+- Animation of of Pacdemic-Man death scene was created 
+- Custom sprites were added for most of the game pieces 
+
 The sprites were custom made by our team just for this project, see them in all of their glory below!
 
 ## 🚧 Challenges we ran into
