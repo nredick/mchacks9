@@ -76,7 +76,7 @@ And at least for some of us, that game development is not a career path we'll be
 ![pill](demos/pill.png)
 
 ## 📦 Demo
-https://youtu.be/GJLHuS9S7uQ
+[![demo](demos/alpha.png)](https://youtu.be/GJLHuS9S7uQ)
 
 ## 🧹 Repository Organization
 
