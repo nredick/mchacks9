@@ -78,6 +78,8 @@ And at least for some of us, that game development is not a career path we'll be
 ## 📦 Demo
 [![demo](demos/alpha.png)](https://youtu.be/GJLHuS9S7uQ)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GJLHuS9S7uQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 🧹 Repository Organization
 
 ```
