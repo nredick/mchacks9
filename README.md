@@ -24,12 +24,12 @@ The Unity platform has a big learning curve, especially since no one on our team
 ## 🏆 Accomplishments that we're proud of
 We're definitely very proud of the game as a whole and the creativity that went into making it possible. 
 
-## 🕹 What we learned
+## 🧠 What we learned
 We learned a lot more about the game development process, the Unity platform, and the rules of Pac-Man. The physics behind the movements of Pac-Man and ghosts was particularly fun to learn about and code! 
 
 And at least for some of us, that game development is not a career path we'll be pursuing. 
 
-## Gameplay 
+## 🎮 Gameplay 
 
 - Like the original Pac-Man game, the goal is to accumulate as many points as possible
 - Gameplay begins with any key press
