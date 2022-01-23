@@ -55,25 +55,25 @@ And at least for some of us, that game development is not a career path we'll be
 
 **COVID-19 "Ghost" Variants:**
 
-| ![alpha](demo_images/alpha.png) |    ![beta](demo_images/beta.png)    |
+| ![alpha](demos/alpha.png) |    ![beta](demos/beta.png)    |
 |:-------------------------------:|:-----------------------------------:|
 |          Alpha Variant          |             Beta Variant            |
-| ![delta](demo_images/delta.png) | ![omicron](demo_images/omicron.png) |
+| ![delta](demos/delta.png) | ![omicron](demos/omicron.png) |
 |          Delta Variant          |           Omicron Variant           |
 
 **Vulnerable ghosts:**
 
-![dead](demo_images/edible.png)
+![dead](demos/edible.png)
 
 **Face-mask "power pellets":** 
 
-![dead](demo_images/mask.png)
+![dead](demos/mask.png)
 
 **Vaccine syringe, hand sanitizer, and pill -themed "fruits":**
 
-![syringe](demo_images/syringe.png)
-![sanitizer](demo_images/sanitizer.png)
-![pill](demo_images/pill.png)
+![syringe](demos/syringe.png)
+![sanitizer](demos/sanitizer.png)
+![pill](demos/pill.png)
 
 ## 📦 Demo
 ![demo](demo.mov)
@@ -106,7 +106,7 @@ And at least for some of us, that game development is not a career path we'll be
 │   ├── pacman_9.png
 │   ├── pacmans.png
 │   └── pill.png
-├── demo_images
+├── demos
 │   ├── alpha.png
 │   ├── beta.png
 │   ├── delta.png
