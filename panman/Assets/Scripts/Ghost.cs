@@ -8,6 +8,7 @@ public class Ghost : MonoBehaviour
     public GhostScatter scatter { get; private set; }
     public GhostChase chase { get; private set; }
     public GhostFrightened frightened { get; private set; }
+    public GhostPacifist pacifist { get; private set; }
     public GhostBehavior initialBehavior; // each ghost has diff initial behavior (alpha scatters, rest in home)
     public Transform target; // usually pacman, in theory could be other things
     public int points = 200;
@@ -34,6 +35,7 @@ public class Ghost : MonoBehaviour
         this.frightened.Disable(); // never start in frightened or chase mode
         this.chase.Disable();
         this.scatter.Enable();
+        this.pacifist.Disable();
 
         if (this.home != this.initialBehavior) { // turn off home if not set as initial behavior (for all but alpha)
             this.home.Disable();
