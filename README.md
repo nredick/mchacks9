@@ -2,6 +2,8 @@
 
 This project was built for [McHacks 9 - 2022](https://www.mchacks.ca), a virtual, 36-hour hackathon. Our goal was to learn more about game development, so we created a COVID-themed spoof of the classic '80s arcade game: Pac-Man. 
 
+Try the game [HERE](https://pacdemic-man-2vsjz.ondigitalocean.app)!
+
 _Project made with_ ❤️ _by [Nathalie](https://github.com/nredick), [Elinor](https://github.com/elinorpd) and [Alex](https://github.com/allu5662)._
 
 ## ✍️ Project Description
