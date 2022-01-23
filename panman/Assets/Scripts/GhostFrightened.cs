@@ -35,7 +35,7 @@ public class GhostFrightened : GhostBehavior
     {
         this.eaten = true;
         this.ghost.SetPosition(this.ghost.home.inside.position);
-        this.ghost.home.Enable(this.duration);
+        this.ghost.home.Enable(this.duration); // home behavior
 
         // change colors and eyes back
         this.body.enabled = false;
