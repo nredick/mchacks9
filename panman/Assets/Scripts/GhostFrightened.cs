@@ -13,12 +13,12 @@ public class GhostFrightened : GhostBehavior
     {
         base.Enable(duration);
 
-        this.body.enabled = false;
+        this.body.enabled = false; // normal body goes away
         this.eyes.enabled = false;
-        this.blue.enabled = true;
-        this.white.enabled = false;
+        this.blue.enabled = true; // blue turns on
+        this.white.enabled = false; // off initially
 
-        Invoke(nameof(Flash), duration / 2.0f);
+        Invoke(nameof(Flash), duration / 2.0f); // start flashing after half the duration
     }
 
     public override void Disable()
@@ -37,6 +37,7 @@ public class GhostFrightened : GhostBehavior
         this.ghost.SetPosition(this.ghost.home.inside.position);
         this.ghost.home.Enable(this.duration);
 
+        // change colors and eyes back
         this.body.enabled = false;
         this.eyes.enabled = true;
         this.blue.enabled = false;
@@ -45,10 +46,10 @@ public class GhostFrightened : GhostBehavior
 
     private void Flash()
     {
-        if (!this.eaten)
+        if (!this.eaten) // as long as not eaten
         {
-            this.blue.enabled = false;
-            this.white.enabled = true;
+            this.blue.enabled = false; 
+            this.white.enabled = true; // turn on white 
             this.white.GetComponent<AnimatedSprite>().Restart();
         }
     }
@@ -56,13 +57,13 @@ public class GhostFrightened : GhostBehavior
     private void OnEnable()
     {
         this.blue.GetComponent<AnimatedSprite>().Restart();
-        this.ghost.movement.speedMultiplier = 0.5f;
+        this.ghost.movement.speedMultiplier = 0.5f; // slower when frightened
         this.eaten = false;
     }
 
     private void OnDisable()
     {
-        this.ghost.movement.speedMultiplier = 1.0f;
+        this.ghost.movement.speedMultiplier = 1.0f; // move normal speed
         this.eaten = false;
     }
 
@@ -83,7 +84,7 @@ public class GhostFrightened : GhostBehavior
                 Vector3 newPosition = this.transform.position + new Vector3(availableDirection.x, availableDirection.y);
                 float distance = (this.ghost.target.position - newPosition).sqrMagnitude;
 
-                if (distance > maxDistance)
+                if (distance > maxDistance) // check if that is the direction going away from pacman
                 {
                     direction = availableDirection;
                     maxDistance = distance;

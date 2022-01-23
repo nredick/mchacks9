@@ -3,13 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(Movement))]
 public class Ghost : MonoBehaviour
 {
-    public Movement movement { get; private set; }
+    public Movement movement { get; private set; } // respecive ghost movements determine behaviors
     public GhostHome home { get; private set; }
     public GhostScatter scatter { get; private set; }
     public GhostChase chase { get; private set; }
     public GhostFrightened frightened { get; private set; }
-    public GhostBehavior initialBehavior;
-    public Transform target;
+    public GhostBehavior initialBehavior; // each ghost has diff initial behavior (alpha scatters, rest in home)
+    public Transform target; // usually pacman, in theory could be other things
     public int points = 200;
 
     private void Awake()
@@ -27,15 +27,15 @@ public class Ghost : MonoBehaviour
     }
 
     public void ResetState()
-    {
-        this.gameObject.SetActive(true);
-        this.movement.ResetState();
+    { // for restarting round
+        this.gameObject.SetActive(true); // turn back on
+        this.movement.ResetState(); // reset movement
 
-        this.frightened.Disable();
+        this.frightened.Disable(); // never start in frightened or chase mode
         this.chase.Disable();
         this.scatter.Enable();
 
-        if (this.home != this.initialBehavior) {
+        if (this.home != this.initialBehavior) { // turn off home if not set as initial behavior (for all but alpha)
             this.home.Disable();
         }
 
@@ -52,12 +52,12 @@ public class Ghost : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    { // for getting eaten or eating
         if (collision.gameObject.layer == LayerMask.NameToLayer("Pacman"))
         {
-            if (this.frightened.enabled) {
+            if (this.frightened.enabled) { // ghost is eaten if collides w pacman while frightened
                 FindObjectOfType<GameManager>().GhostEaten(this);
-            } else {
+            } else { // ghost eats pacman if collides while not frightened
                 FindObjectOfType<GameManager>().PacmanEaten();
             }
         }

@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
     public Pacman pacman;
     public Transform pellets;
 
-    public Text gameOverText;
-    public Text scoreText;
-    public Text livesText;
+    // gameOverText;
+    //public Text scoreText;
+    //public Text livesText;
 
     // increase multiplier for each ghost eaten
     public int ghostMultiplier { get; private set; } = 1;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void NewRound() // called at new game, and when all pellets eaten
     {
-        this.gameOverText.enabled = false;
+        //this.gameOverText.enabled = false;
 
         foreach (Transform pellet in this.pellets) {
             pellet.gameObject.SetActive(true); // turned to false when eaten, so set them all back on
@@ -53,12 +53,12 @@ public class GameManager : MonoBehaviour
             this.ghosts[i].ResetState();
         }
 
-        this.pacman.ResetState();
+        this.pacman.ResetState(); // turns pacman back on
     }
 
     private void GameOver() // called when out of lives
     {
-        this.gameOverText.enabled = true;
+        //this.gameOverText.enabled = true;
 
         for (int i = 0; i < this.ghosts.Length; i++) {
             this.ghosts[i].gameObject.SetActive(false); // get rid of ghosts
@@ -70,13 +70,13 @@ public class GameManager : MonoBehaviour
     private void SetLives(int lives) // to update lives
     {
         this.lives = lives;
-        this.livesText.text = "x" + lives.ToString();
+        //this.livesText.text = "x" + lives.ToString();
     }
 
     private void SetScore(int score) // to update score
     {
         this.score = score;
-        this.scoreText.text = score.ToString().PadLeft(2, '0');
+        //this.scoreText.text = score.ToString().PadLeft(2, '0');
     }
 
     public void PacmanEaten() // death
@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
     public void PowerPelletEaten(PowerPellet pellet)
     {
         for (int i = 0; i < this.ghosts.Length; i++) { // able to eat ghosts
-            this.ghosts[i].frightened.Enable(pellet.duration);
+            this.ghosts[i].frightened.Enable(pellet.duration); // enable the frightened state for pellet duration
         }
 
         PelletEaten(pellet);

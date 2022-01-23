@@ -4,6 +4,7 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public LayerMask obstacleLayer;
+    // list of available directions
     public List<Vector2> availableDirections { get; private set; }
 
     private void Start()
@@ -20,6 +21,7 @@ public class Node : MonoBehaviour
 
     private void CheckAvailableDirection(Vector2 direction)
     {
+        // cast in the dirction you want to check
         RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.5f, 0.0f, direction, 1.0f, this.obstacleLayer);
 
         // If no collider is hit then there is no obstacle in that direction
