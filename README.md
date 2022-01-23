@@ -29,18 +29,34 @@ We learned a lot more about the game development process, the Unity platform, an
 
 And at least for some of us, that game development is not a career path we'll be pursuing. 
 
+## Gameplay 
+
+- Like the original Pac-Man game, the goal is to accumulate as many points as possible
+- Gameplay begins with any key press
+- Move pacdemic-man with the  `W` `A` `S` `D` keys or `up` `down` `left` `right` arrow keys 
+- Edible variants move at half-speed 
+
+| Item           | Bonus                                   |
+|----------------|-----------------------------------------|
+| Vaccine        | +1 life                                 |
+| Pill           | 5s immunity & slower variants & +25 pts |
+| Mask           | edible variants & +50 pts               |
+| Hand Sanitizer | +15 pts                                 |
+| Pellets        | +10 pts                                 |
+
 ## Custom Sprites
 
 **COVID-19 "Ghost" Variants:**
 
-![alpha](demo_images/big_ghost_alpha.png)
-![alpha](demo_images/CovidBig3.png)
-![alpha](demo_images/CovidBig2.png)
-![alpha](demo_images/CovidBig4.png)
+|   |   | ![alpha](demo_images/alpha.png) |    ![beta](demo_images/beta.png)    |
+|---|---|:-------------------------------:|:-----------------------------------:|
+|   |   |          Alpha Variant          |             Beta Variant            |
+|   |   | ![delta](demo_images/delta.png) | ![omicron](demo_images/omicron.png) |
+|   |   |          Delta Variant          |           Omicron Variant           |
 
 **Vulnerable ghosts:**
 
-![dead](demo_images/BlueGhostBig.png)
+![dead](demo_images/edible.png)
 
 **Face-mask "power pellets":** 
 
