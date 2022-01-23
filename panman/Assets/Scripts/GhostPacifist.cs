@@ -30,7 +30,7 @@ public class GhostPacifist : GhostBehavior
 
     private void OnEnable()
     {
-        this.ghost.movement.speedMultiplier = 0.5f; // slower when frightened
+        this.ghost.movement.speedMultiplier = 0.7f; // slower when pacifists
         //this.IgnoreLayerCollision(6, 7, true);; // turns off collision between ghost and pacman layers
     }
 
