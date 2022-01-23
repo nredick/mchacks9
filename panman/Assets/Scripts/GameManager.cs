@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
 
         // dont reset state when die bc dont want pellets back
         if (this.lives > 0) {
-            Invoke(nameof(ResetState), 5.0f); // 3s grace period before restarting round
+            Invoke(nameof(ResetState), 5.0f); // 5s grace period before restarting round
         } else {
             GameOver();
         }
@@ -127,12 +127,11 @@ public class GameManager : MonoBehaviour
 
     public void PillPelletEaten(PillPellet pellet)
     {
-        /*for (int i = 0; i < this.ghosts.Length; i++) { // able to eat ghosts
-            this.ghosts[i].frightened.Enable(pellet.duration); // enable the frightened state for pellet duration
+        for (int i = 0; i < this.ghosts.Length; i++) { // pacify active ghosts 
+            this.ghosts[i].pacifist.Enable(pellet.duration); // enable the frightened state for pellet duration
         }
-        CancelInvoke(nameof(ResetGhostMultiplier)); // if you eat two ghosts in a row, cancel previous to restart the effects
+
         Invoke(nameof(ResetGhostMultiplier), pellet.duration); // reset multiplier after pellet runs out
-        */
         PelletEaten(pellet);
     }
 

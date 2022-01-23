@@ -4,10 +4,9 @@ public class GhostPacifist : GhostBehavior
 {
     public SpriteRenderer body;
     public SpriteRenderer eyes;
-    public SpriteRenderer blue;
     public SpriteRenderer white;
 
-    public bool eaten { get; private set; }
+    public bool transparent { get; private set; }
 
     public override void Enable(float duration)
     {
@@ -15,10 +14,9 @@ public class GhostPacifist : GhostBehavior
 
         this.body.enabled = false; // normal body goes away
         this.eyes.enabled = false;
-        this.blue.enabled = false; // blue stays off
+        //this.blue.enabled = false; // blue stays off
         this.white.enabled = true; // turns white on
 
-        //Invoke(nameof(Flash), duration / 2.0f); // start flashing after half the duration
     }
 
     public override void Disable()
@@ -27,24 +25,21 @@ public class GhostPacifist : GhostBehavior
 
         this.body.enabled = true;
         this.eyes.enabled = true;
-        this.blue.enabled = false; // stays off
         this.white.enabled = false; // turns off
     }
 
-    
-
     private void OnEnable()
     {
-        this.blue.GetComponent<AnimatedSprite>().Restart();
         this.ghost.movement.speedMultiplier = 0.5f; // slower when frightened
-        this.eaten = false; // probably dont need this
+        //this.IgnoreLayerCollision(6, 7, true);; // turns off collision between ghost and pacman layers
     }
 
     private void OnDisable()
     {
         this.ghost.movement.speedMultiplier = 1.0f; // move normal speed
-        this.eaten = false;
+        //this.IgnoreLayerCollision(6, 7, false); // turns on collision between ghost and pacman layers
         this.ghost.chase.Enable(); // transition to chase
+        this.ghost.scatter.Disable(); 
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -79,7 +74,7 @@ public class GhostPacifist : GhostBehavior
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Pacman"))
         {
-            // nothing happens, we made them pacifists
+            Debug.Log(true);
         }
     }*/
 

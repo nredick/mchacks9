@@ -20,6 +20,7 @@ public class Ghost : MonoBehaviour
         this.scatter = GetComponent<GhostScatter>();
         this.chase = GetComponent<GhostChase>();
         this.frightened = GetComponent<GhostFrightened>();
+        this.pacifist = GetComponent<GhostPacifist>();
     }
 
     private void Start()
@@ -59,6 +60,9 @@ public class Ghost : MonoBehaviour
         {
             if (this.frightened.enabled) { // ghost is eaten if collides w pacman while frightened
                 FindObjectOfType<GameManager>().GhostEaten(this);
+            } else if (this.pacifist.enabled) {
+                // do nothing i guess?
+                // maybe turn off pac collision
             } else { // ghost eats pacman if collides while not frightened
                 FindObjectOfType<GameManager>().PacmanEaten();
             }
