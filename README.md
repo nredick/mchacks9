@@ -32,7 +32,7 @@ And at least for some of us, that game development is not a career path we'll be
 ## 🎮 Gameplay 
 
 - Like the original Pac-Man game, the goal is to accumulate as many points as possible
-- Gameplay begins with any key press
+- Gameplay begins immediately!
 - Move pacdemic-man with the  `W` `A` `S` `D` keys or `up` `down` `left` `right` arrow keys 
 - Edible variants move at half-speed 
 
@@ -68,9 +68,9 @@ And at least for some of us, that game development is not a career path we'll be
 ![sanitizer](demo_images/sanitizer.png)
 ![pill](demo_images/pill.png)
 
-## Demo
+## 📦 Demo
 
-## Repository Organization
+## 🧹 Repository Organization
 
 ```
 .
